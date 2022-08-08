@@ -1,0 +1,1 @@
+select product.pro_id,product.pro_name from `orders` inner join supplier_pricing on supplier_pricing.pricing_id=`orders`.pricing_id inner join product on product.pro_id=supplier_pricing.pro_id where `orders`.ord_date>"2021-10-05";

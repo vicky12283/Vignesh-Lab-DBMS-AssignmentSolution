@@ -1,0 +1,1 @@
+select product.pro_name, `orders`.* from `orders`, supplier_pricing, product where `orders`.cus_id=2 and `orders`.pricing_id=supplier_pricing.pricing_id and supplier_pricing.pro_id=product.pro_id;
